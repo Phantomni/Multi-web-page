@@ -1,0 +1,110 @@
+body{
+    height: 100vh;
+}
+.flex {
+    display : flex;
+    height : auto;
+    min-height : 100%;
+    background: black; /* fallback for old browsers */
+    background: -webkit-linear-gradient(to bottom, black , grey); 
+    background: linear-gradient(to bottom, black , grey); 
+    color: white;
+}
+
+.text-welcome{
+    margin-top: 15%;
+    border-radius: 5px;
+}
+
+.left, .right{
+    width: 100%;
+}
+
+.text-contact > h1, .text-contact > h3{
+    font-size: 2.2vw;
+}
+
+.section-header{
+    color: wheat;
+}
+
+.content-header{
+    font-family: 'Oleo Script', cursive;
+    color:#fcc500;
+    font-size: 3.3vw;
+}
+
+.text-contact {
+    padding: 5px;
+    animation: pulse 5s infinite;
+    border-radius: 10px;
+    text-align: center;
+}
+
+@keyframes pulse {
+    0% {
+        background-color: black;
+    }
+    49%{
+        background-color: grey;
+    }
+    51% {
+        background-color: grey;
+    }
+    100%{
+        background-color: black;
+    }
+}
+
+
+
+.form-line{
+    border-right: 1px solid #B29999;
+    padding: 10px 10px 0 10px;
+}
+
+.form-group{
+    margin-top: 10px;
+}
+label{
+    font-size: 3.3vw;
+    line-height: 1em;
+    font-weight: normal;
+}
+.form-control{
+    font-size: 3.3vw;
+    color: #080808;
+}
+.form-control:focus{
+    background: lightblue;
+}
+textarea.form-control {
+    height: 135px;
+    font-size: 15px;
+}
+
+.submit{
+    font-size: 3.3vw;
+    background-color: transparent;
+    color: #fff;
+    border: 3px black outset;
+    text-decoration: none;
+}
+.submit:hover{
+    font-size: 3.3vw;
+    background-color: #0003;
+    color: #fff;
+    border: 3px black outset;
+    text-decoration: none;
+}
+.submit:active{
+    font-size: 3.3vw;
+    background-color: #00000080;
+    color: #fff;
+    border: 3px black inset;
+    text-decoration: none;
+}
+
+input[type="text" ],[type="tel"], [type="email"] { 
+    font-size: 15px; 
+}
